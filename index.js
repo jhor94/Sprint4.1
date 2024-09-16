@@ -16,7 +16,7 @@ document.getElementById("boton").addEventListener("click", function () {
     const svgContainer = document.getElementById("svgImage");
     if (svgContainer) { // para que el contenedot no detecte null
         if (svgContainer.innerHTML.includes('id="1"')) {
-            svgContainer.innerHTML = `id="2" <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            svgContainer.innerHTML = `<svg id="2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <path fill="#08BDBA" d="M35.6,-61.7C48.3,-54.3,62.3,-49.2,70.7,-39.3C79.2,-29.4,82,-14.7,79.6,-1.4C77.2,11.9,69.6,23.9,62.6,36.3C55.7,48.7,49.4,61.7,39,65.1C28.7,68.6,14.4,62.6,-0.8,63.9C-15.9,65.2,-31.7,73.8,-46,72.6C-60.3,71.5,-73,60.5,-78.4,46.7C-83.8,33,-81.8,16.5,-77.2,2.7C-72.5,-11.1,-65.2,-22.3,-58.4,-33.6C-51.7,-45,-45.5,-56.6,-35.9,-65.8C-26.2,-75.1,-13.1,-82,-0.8,-80.5C11.4,-79.1,22.8,-69.2,35.6,-61.7Z" transform="translate(100 100)" />
             </svg>`;
         }
@@ -27,7 +27,7 @@ document.getElementById("boton").addEventListener("click", function () {
             </svg>`;
         }
         else if (svgContainer.innerHTML.includes('id="2"')) {
-            svgContainer.innerHTML = `id="0" <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            svgContainer.innerHTML = `<svg id="0" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <path fill="#FF0066" d="M23.5,-40.6C35.5,-33.8,53.7,-37.7,59,-32.7C64.4,-27.7,56.9,-13.8,58.3,0.9C59.8,15.5,70.3,31.1,70.2,45.1C70.1,59.2,59.4,71.8,46,69.3C32.5,66.8,16.3,49.2,0.3,48.7C-15.7,48.3,-31.4,64.9,-41.1,65.2C-50.8,65.6,-54.4,49.6,-56.6,36C-58.8,22.4,-59.6,11.2,-61.4,-1C-63.2,-13.3,-66.1,-26.5,-63,-38.7C-60,-50.8,-51,-61.8,-39.5,-68.9C-28,-75.9,-14,-78.9,-4.1,-71.7C5.8,-64.6,11.5,-47.3,23.5,-40.6Z" transform="translate(100 100)" />
             </svg>`;
         }
