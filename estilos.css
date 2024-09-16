@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position:relative
+    position:relative;
 }
 
 .contenedor1 {
@@ -15,12 +15,15 @@
     position: absolute;
     color: whitesmoke;
     font-style: oblique;
+    padding: auto;
+    justify-content: center;
 }
 
-svg{
-    width: 1200px;
+span{
+    width: 1250px;
     position: absolute;
     text-align: right;
+    justify-content: center;
 }
 
 .rating{
@@ -45,9 +48,9 @@ svg{
 }
 
 header {
-    font-family: Arial, sans-serif;
+    font-family:"Caveat", cursive;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 40px;
 }
 @keyframes changeDC{
     0%{
@@ -58,3 +61,35 @@ header {
         scale: 1.18;
     }
 }
+
+@media (max-width: 576px) {
+    #clima {
+        text-align: center;
+    }
+    #contenedor{
+        width: 100%;
+    }
+    #rating{
+        width: 100%;
+    }
+    #boton{
+        width: 100%;
+    }
+
+    #clima2 {
+        text-align: left;
+    }
+}
+
+.btn-warning {
+    width: 200px;
+    padding: 10px 20px;
+    background-color: #f4d31a;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family:"Caveat";
+    font-size: 25px;
+  }
+ 
