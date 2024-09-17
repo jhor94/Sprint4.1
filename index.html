@@ -20,30 +20,31 @@
         </div>
     </header>
     <div class="contenedor container-fluid">
+
         <span id="svgImage" class="img-fluid">
-            <svg id =1 viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#8A3FFC" d="M38.2,-55.1C46.6,-46.5,48.5,-31.4,54.5,-16.8C60.6,-2.1,70.8,12.1,67.8,22.3C64.8,32.4,48.6,38.5,35.1,49.4C21.6,60.3,10.8,75.9,-1,77.3C-12.7,78.6,-25.5,65.6,-33.6,53C-41.7,40.3,-45.2,28.1,-52.1,15C-58.9,2,-69,-11.9,-67.5,-23.7C-66.1,-35.5,-53.1,-45.3,-39.9,-52.3C-26.7,-59.2,-13.3,-63.3,0.8,-64.4C14.9,-65.5,29.8,-63.6,38.2,-55.1Z" transform="translate(100 100)" />
-                </svg>
+            <svg id=1 viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#8A3FFC"
+                    d="M38.2,-55.1C46.6,-46.5,48.5,-31.4,54.5,-16.8C60.6,-2.1,70.8,12.1,67.8,22.3C64.8,32.4,48.6,38.5,35.1,49.4C21.6,60.3,10.8,75.9,-1,77.3C-12.7,78.6,-25.5,65.6,-33.6,53C-41.7,40.3,-45.2,28.1,-52.1,15C-58.9,2,-69,-11.9,-67.5,-23.7C-66.1,-35.5,-53.1,-45.3,-39.9,-52.3C-26.7,-59.2,-13.3,-63.3,0.8,-64.4C14.9,-65.5,29.8,-63.6,38.2,-55.1Z"
+                    transform="translate(100 100)" />
+            </svg>
         </span>
-        
-        <div class="contenedor1">
-            <div class="container-fluid">
+
+        <div class="contenedor1 container-fluid">
+            <div class="flex-md-row">
                 <div class="p-5 mt-5 text-center">
-                <h1>Are you ready to laugh?</h1>
-                <div id="app"></div>
-            </div>
-            <div class="rating img-fluid">
-                <button onclick="reportJoke(1)" class="emoji">&#128564;</button>
-                <button onclick="reportJoke(2)" class="emoji">&#128528;</button>
-                <button onclick="reportJoke(3)" class="emoji">&#128514;</button>
-            </div>
-            <div class="d-flex justify-content-center align-items-center">
-                <button id="boton" class="btn btn-warning btn-lg" onclick="loadJokes()">Next Joke</button>
+                    <h1 class="text-center fw-bold">Are you ready to laugh?</h1>
+                    <div clas="text-center"  id="app"></div>
+                </div>
+                <div class="rating img-fluid">
+                    <button onclick="reportJoke(1)" class="emoji">&#128564;</button>
+                    <button onclick="reportJoke(2)" class="emoji">&#128528;</button>
+                    <button onclick="reportJoke(3)" class="emoji">&#128514;</button>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <button id="boton" class="btn btn-warning btn-lg text-center" onclick="loadJokes()">Next Joke</button>
+                </div>
             </div>
         </div>
-                
-    
-
     </div>
 
     <script src="index.js"></script>

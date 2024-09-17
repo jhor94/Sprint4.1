@@ -117,7 +117,7 @@ let getWeather = () => {
         } else if (description === "broken clouds"){
             climaElement2.innerHTML = "&#127783;"
             console.log(description)
-        }else if (description === ""){
+        }else if (description === "overcast clouds"){
             climaElement2.innerHTML = "&#127781;"
             console.log(description)
         }

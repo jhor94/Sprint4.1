@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden ;
+}
+
 .contenedor{
     margin: 0; 
     height: 100vh; 
@@ -20,7 +25,7 @@
 }
 
 span{
-    width: 1250px;
+    width: 100%;
     position: absolute;
     text-align: right;
     justify-content: center;
@@ -63,23 +68,65 @@ header {
 }
 
 @media (max-width: 576px) {
+    #svgImage{
+        width: 100%;
+        display: flex;
+        
+    }
     #clima {
         text-align: center;
     }
     #contenedor{
-        width: 120%;
+        width: 100%;
         font-size: 20%;
+        flex-direction: column;
+        display: flex;
     }
     .rating{
         width: 100%;
         font-size: 40px;
+        flex-direction: none;
+        display: flex;
     }
     #boton{
         width: 100%;
+        flex-direction: column;
+        display: flex;
+        text-align: center;
     }
 
     #clima2 {
         text-align: left;
+    }
+}
+
+@media (max-width: 250px) {
+    #clima {
+        text-align: center;
+        flex-direction: column;
+    }
+    #contenedor{
+        width: 90%;
+        font-size: 20%;
+        flex-direction: column;
+        display: flex;
+    }
+    .rating{
+        width: 90%;
+        font-size: 40px;
+        flex-direction: column;
+        display: flex;
+    }
+    #boton{
+        width: 90%;
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+    }
+
+    #clima2 {
+        text-align: left;
+        flex-direction: column;
     }
 }
 
