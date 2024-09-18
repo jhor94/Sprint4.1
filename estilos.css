@@ -2,33 +2,31 @@ html,
 body {
   overflow-x: hidden ;
 }
-
-.contenedor{
-    margin: 0; 
-    height: 100vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position:relative;
+.position-relative{
+    position: relative;
 }
-
-.contenedor1 {
-    width: 55%; 
-    max-width: 70%; 
+.text-jokes {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
-    display: wrap;
-    position: absolute;
-    color: whitesmoke;
-    font-style: oblique;
-    padding: auto;
-    justify-content: center;
+    color: rgb(4, 1, 1); /* Ajusta el color según sea necesario */
+    text-align: center;
+    width: 70% auto;
+    font-size: 30px;
 }
 
-span{
-    width: 100%;
-    position: absolute;
+.rating{
+    margin-top: 10px;
+}
+.svgImage{
+    width: 1000px;
+    position: relative;
     text-align: right;
     justify-content: center;
+    left: 50%;
+    top: 40%;
 }
 
 .rating{
@@ -67,26 +65,29 @@ header {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 900px) {
+    body{
+        background-color: #8A3FFC;
+    };
     #svgImage{
         width: 100%;
-        display: flex;
+        top: auto;
+        left: auto;
+        position: relative;
         
+    }
+
+    span{
+        display: none;
     }
     #clima {
         text-align: center;
     }
-    #contenedor{
-        width: 100%;
-        font-size: 20%;
-        flex-direction: column;
-        display: flex;
-    }
+  
     .rating{
         width: 100%;
         font-size: 40px;
         flex-direction: none;
-        display: flex;
     }
     #boton{
         width: 100%;
@@ -101,20 +102,26 @@ header {
 }
 
 @media (max-width: 250px) {
+    body{
+        background-color: #8A3FFC;
+    }
+    span{
+        display: none;
+    }
     #clima {
         text-align: center;
         flex-direction: column;
     }
-    #contenedor{
-        width: 90%;
+    #svgImage{
+        width: 100%;
         font-size: 20%;
-        flex-direction: column;
-        display: flex;
+        box-sizing: none;
+
     }
     .rating{
         width: 90%;
         font-size: 40px;
-        flex-direction: column;
+        flex-direction: flex;
         display: flex;
     }
     #boton{
@@ -129,6 +136,8 @@ header {
         flex-direction: column;
     }
 }
+
+
 
 .btn-warning {
     width: 200px;
