@@ -97,7 +97,6 @@ function reportJoke(score: number) {
     }
     console.log(rateJokes)
 
-
 }
 
 let keyWeather = "811ede49d711f61591db638ccaaa6efb"
