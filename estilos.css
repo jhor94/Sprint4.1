@@ -10,25 +10,25 @@ body {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 0;
     color: rgb(4, 1, 1); /* Ajusta el color según sea necesario */
     text-align: center;
     width: 60% auto;
     font-size: 30px;
     font-family:"Caveat", cursive;
-
 }
 
 .rating{
     margin-top: 10px;
 }
 .svgImage{
-    width: 1000px;
-    position: relative;
+    width: 1200px;
+    position: absolute;
     text-align: right;
     justify-content: center;
     left: 50%;
-    top: 40%;
+    top: 50%;
+    z-index: 0;
 }
 
 .rating{
@@ -138,8 +138,6 @@ header {
         flex-direction: column;
     }
 }
-
-
 
 .btn-warning {
     width: 200px;
