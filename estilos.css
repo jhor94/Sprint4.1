@@ -1,34 +1,77 @@
-html,
-body {
-  overflow-x: hidden ;
-}
-.position-relative{
+/*.position-relative-container {
     position: relative;
-}
-.text-jokes {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    color: rgb(4, 1, 1); /* Ajusta el color según sea necesario */
-    text-align: center;
-    width: 60% auto;
-    font-size: 30px;
-    font-family:"Caveat", cursive;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
 }
 
-.rating{
-    margin-top: 10px;
-}
-.svgImage{
-    width: 1200px;
+
+.svgImage {
     position: absolute;
-    text-align: right;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+    display: flex;
     justify-content: center;
-    left: 50%;
-    top: 50%;
-    z-index: 0;
+    align-items: center;
+}
+
+
+.text-jokes {
+    position: relative;
+    z-index: 2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%; 
+    text-align: center; 
+    color: #000; 
+}
+
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#boton {
+    margin-top: 20px;
+}*/
+.position-relative-container{
+        position: relative;
+        width: 100%;
+        height: 100vh; 
+        overflow: hidden; 
+}
+
+.svgImage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    z-index: 1;
+    display: flex;
+}
+.text-jokes {
+    position: relative;
+    z-index: 2;
+    color: rgb(0, 0, 0); 
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    font-family:"Caveat", cursive;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .rating{
@@ -67,33 +110,22 @@ header {
     }
 }
 
-@media (max-width: 900px) {
-    body{
-        background-color: #8A3FFC;
-    };
-    #svgImage{
-        width: 100%;
-        top: auto;
-        left: auto;
-        position: relative;
-        
-    }
+@media (max-width: 800px) {
 
-    span{
-        display: none;
-    }
     #clima {
         text-align: center;
     }
   
     .rating{
-        width: 100%;
-        font-size: 40px;
-        flex-direction: none;
+        font-size: 30px;
+
+    }
+    .text-jokes{
+        font-size: 20px;
     }
     #boton{
         width: 100%;
-        flex-direction: column;
+
         display: flex;
         text-align: center;
     }
@@ -101,31 +133,18 @@ header {
     #clima2 {
         text-align: left;
     }
+    
+
+        
 }
 
 @media (max-width: 250px) {
-    body{
-        background-color: #8A3FFC;
-    }
-    span{
-        display: none;
-    }
+
     #clima {
         text-align: center;
         flex-direction: column;
     }
-    #svgImage{
-        width: 100%;
-        font-size: 20%;
-        box-sizing: none;
-
-    }
-    .rating{
-        width: 90%;
-        font-size: 40px;
-        flex-direction: flex;
-        display: flex;
-    }
+    
     #boton{
         width: 90%;
         flex-direction: column;
@@ -137,8 +156,8 @@ header {
         text-align: left;
         flex-direction: column;
     }
-}
 
+}
 .btn-warning {
     width: 200px;
     padding: 10px 20px;
