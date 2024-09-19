@@ -13,8 +13,10 @@ body {
     z-index: 1;
     color: rgb(4, 1, 1); /* Ajusta el color según sea necesario */
     text-align: center;
-    width: 70% auto;
+    width: 60% auto;
     font-size: 30px;
+    font-family:"Caveat", cursive;
+
 }
 
 .rating{
